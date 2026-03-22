@@ -12,7 +12,7 @@ app.use(express.static("public"));
 
 const pool = new Pool({
    connectionString:
-process.env.postgresql://postgres:[etg9cqIHIElQ8GVc]@db.hflqpqxaxisjxiubfrya.supabase.co:5432/postgres
+process.env.postgresql://postgres.hflqpqxaxisjxiubfrya:etg9cqIHIElQ8GVc@aws-1-ap-south-1.pooler.supabase.com:6543/postgres
    ssl:{rejectUnauthorized:false}
 });
 
