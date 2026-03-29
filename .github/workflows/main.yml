@@ -24,5 +24,10 @@ jobs:
       - name: Run server check
         run: node server.js & sleep 5
 
+  deployy:
+     needs: build
+     runs-on: ubuntu-latest
+
+     steps:   
       - name: Deploy Step
         run: echo "Deployment successful"
